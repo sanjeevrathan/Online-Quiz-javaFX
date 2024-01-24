@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.resultController">
+   <children>
+      <Label alignment="CENTER" layoutX="148.0" layoutY="25.0" prefHeight="68.0" prefWidth="354.0" text="RESULT!">
+         <font>
+            <Font name="OCR A Extended" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="remark" alignment="CENTER" layoutX="85.0" layoutY="93.0" prefHeight="80.0" prefWidth="480.0" text="Very Good work! this is your hard work and dedication which helped you to reach the zeinth of success" wrapText="true">
+         <font>
+            <Font name="OCR A Extended" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="marks" layoutX="43.0" layoutY="179.0" style="-fx-background-color: #00eaff; -fx-background-radius: 16px; -fx-border-radius: 16px;" text="9/10" textFill="#1f3eff">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+         <padding>
+            <Insets bottom="32.0" left="32.0" right="32.0" top="32.0" />
+         </padding>
+      </Label>
+      <Label fx:id="marktext" alignment="CENTER" layoutX="21.0" layoutY="307.0" prefHeight="50.0" prefWidth="203.0" text="9/10 marks scored" textFill="#1f3eff" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="correct_progress" layoutX="260.0" layoutY="168.0" minHeight="130.0" minWidth="130.0" progress="0.9" style="-fx-background-color: #27ff00; -fx-progress-color: green; -fx-font-size: 16; -fx-border-radius: 16px; -fx-background-radius: 16px; -fx-box-border: green; -fx-font-weight: 900;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ProgressIndicator>
+      <ProgressIndicator fx:id="wrong_progress" layoutX="477.0" layoutY="168.0" minHeight="130.0" minWidth="130.0" progress="0.1" style="-fx-background-color: #FF7F7F; -fx-progress-color: red; -fx-font-size: 16; -fx-border-radius: 16px; -fx-background-radius: 16px; -fx-box-border: green; -fx-font-weight: 900;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ProgressIndicator>
+      <Label fx:id="wrongtext" alignment="CENTER" layoutX="452.0" layoutY="312.0" prefHeight="40.0" prefWidth="180.0" text="Incorrect answers: 1" textFill="#eb0000" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="correcttext" alignment="CENTER" layoutX="224.0" layoutY="312.0" prefHeight="40.0" prefWidth="203.0" text="Correct answers: 9" textFill="#07b213" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
